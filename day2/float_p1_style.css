@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+.tab-menu {
+  list-style: none;
+  padding-left: 0;
+  border-bottom: 1px solid #e5eaef;
+}
+
+.tab-menu::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.tab-menu-item {
+  float: left;
+  margin-right: 16px;
+}
+
+.tab-menu-item > a {
+  padding: 16px 20px;
+  display: block;
+}
+
+.tab-menu-item.active {
+  border-bottom: 3px solid #1072b8;
+}
+
+.tab-menu-item.active > a {
+  font-weight: bold;
+  color: #1072b8;
+}
