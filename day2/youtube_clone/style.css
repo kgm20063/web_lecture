@@ -1,0 +1,104 @@
+:root {
+	/* Color */
+	--white-color: #fff;
+	--black-color: #140a00;
+	--blue-color: #045fd4;
+	--red-color: #ff0000;
+	--grey-dark-color: #909090;
+	--grey-light-color: #e0e0e0;
+
+	/* Size */
+	--spacing: 12px;
+	--spacing-small: 6px;
+	--avatar-size: 36px;
+
+	/* Font Size */
+	--font-large: 20px;
+	--font-regular: 16px;
+	--font-medium: 14px;
+	--font-small: 12px;
+	--font-micro: 10px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background: #eeeeee;
+}
+
+body {
+	width: 768px;
+	height: 100%;
+	margin: 0 auto;
+	font-family: "Noto Sans KR", sans-serif;
+}
+
+header {
+	background: #000000;
+	width: 100%;
+	height: 50px;
+}
+
+.icon {
+	position: relative;
+	width: 100%;
+}
+
+.icon > i {
+	position: absolute;
+	display: flex;
+	line-height: 50px;
+	margin-left: 10px;
+	color: #ffffff;
+}
+
+.icon > i.fa-youtube {
+	font-weight: bold;
+	left: 30px;
+	color: red;
+}
+
+.icon > i.fa-youtube p {
+	color: #ffffff;
+	margin-left: 5px;
+}
+
+.icon > i:nth-child(3) {
+	right: 0;
+	margin-right: 10px;
+}
+
+section.player {
+	background: #ffffff;
+}
+
+section.player > video {
+	width: 768px;
+}
+
+.infoAndUpNext {
+	background: #ffffff;
+}
+
+.metadata {
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
+}
+
+.hashTag {
+	display: flex;
+}
+
+.hashTag > li {
+	margin-right: 20px;
+}
