@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #292929;
+}
+
+.parent {
+  width: 200px;
+  margin: 0 auto;
+  background: #cecece;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.child::before {
+  content: "";
+}
+
+.red {
+  background: rgb(225, 52, 52);
+}
+
+.yellow {
+  background: rgb(245, 245, 69);
+}
+
+.blue {
+  background: rgb(76, 76, 228);
+}
