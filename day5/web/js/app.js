@@ -1,31 +1,19 @@
-const submitBtn = document.getElementById("submit-btn");
-console.log(submitBtn);
+const loginFrom = document.querySelector(".login-form form");
+const loginBtn = document.querySelector(".login-form button");
+const greetingH1 = document.querySelector("#greeting");
 
-const hiddenBtn = document.getElementsByClassName("hidden");
-
-const [divA, divB, divC] = document.getElementsByTagName("div");
-console.log(divA);
-
-const radioInputs = document.getElementsByName("animal");
-console.log(radioInputs);
-
-const firstDiv = document.querySelector("div");
-console.log(firstDiv);
-
-const [div1, div2, div3] = document.querySelectorAll("div");
-
-div1.innerText = "영역 1";
-
-div1.classList.toggle("color-red");
-
-const newDiv = document.createElement("div");
-newDiv.innerText = "추가된 영역1";
-newDiv.className = "color-red";
-
-const form = document.querySelector("form");
-form.appendChild(newDiv);
-
-const clickHandler = () => console.log("클릭됨!");
-div1.addEventListener("click", clickHandler);
-
-div1.removeEventListener("click", clickHandler);
+const loginSubmitHandler = (e) => {
+  //   console.dir(loginInput.value);
+  const username = loginInput.value;
+  if (username === "") {
+    alert("값을 입력해주세요");
+  } else if (username.length > 15) {
+    alert("15자 이내로 작성해주세요");
+  } else {
+    greetingH1.innerText = `${username}님, 환영합니다`;
+    loginFrom.classList.add("hidden");
+    greetingH1.classList.remove("hidden");
+  }
+  console.log();
+};
+loginFrom.addEventListener("submit", loginSubmitHandler);
